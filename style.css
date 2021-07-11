@@ -1,0 +1,163 @@
+a.nav-link{
+    font-family: 'Josefin Sans', sans-serif, !important;
+    font-size: 18px;
+    font-weight: 100;
+}
+#nav{
+    padding: 0;
+    position: sticky; 
+    top: 0;
+    border-color: transparent;
+    margin-left: 15px;
+
+}
+.navbar-collapse{
+    align-self: center;
+    flex-direction: row-reverse;
+    
+
+}
+a.nav-link{
+    color: black;
+    text-decoration: none;
+}
+a.nav-link:hover{
+    color: crimson !important;
+}
+
+
+
+#body{
+    margin: auto;
+    margin-top: 5px;
+    padding-top: 30px;
+    width: 1020px;
+    height: 100px;
+   
+}
+#botonTarea{
+
+}
+#nombreTarea{
+    border: solid 1px gainsboro;
+    margin: 20px;
+    width: 200px;
+    padding: 5px;
+}
+#titulosTareas{
+    display: flex;
+    margin: 5px;
+}
+a.tareaListada{
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    text-align: center;
+
+}a.tareaListada:hover{
+    color: darksalmon;
+}
+
+
+.naranja{
+    color:  orange !important;
+    font-style: oblique;
+}
+.agregarTareas{
+    float:right;
+    width: 250px;
+    height: 250px;
+    margin-right: 10px;
+    background: transparent;
+    border: solid 5px #eb6864 ;
+    overflow: auto;
+}
+.tareasProgreso{
+    float:right;
+    width: 250px;
+    height: 250px;
+    margin-right: 10px;
+    background-color: transparent ;
+    border: solid 5px #ffde59 ;
+    overflow: auto;
+}
+.tareasCompletadas{
+    float:right;
+    width: 250px;
+    height: 250px;
+    background-color: transparent ;
+    border: solid 5px #7ed597 ;
+    overflow: auto;
+}
+.siguiente{
+    background-color: transparent;
+    border-style: none;
+    color: darksalmon;
+}
+.devolver{
+    background-color: transparent;
+    border-style: none;
+    color: darksalmon;
+
+}
+.eliminarNota{
+    background-color: transparent;
+    border-style: none;
+    color: darksalmon;
+}
+
+
+
+#sticky-footer{
+    font-family: 'Josefin Sans', sans-serif, !important;
+    font-size: 13px;
+
+}
+
+
+.li{
+    margin: 20px auto 0;
+   
+}
+.redes{
+    font-size: 30px; 
+    user-select: none;
+    cursor: default;    
+    line-height: 1.2;
+    text-align: end;
+
+    
+}
+
+
+.fab{
+    margin-right: 15px;
+}
+#app{
+    background: transparent;
+    border: solid 0.5px black ;
+    border-radius: 10px;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    padding: 0.3em;
+    margin: 5px auto 0;
+    }
+a#app:hover{
+    border:solid 0.5px #eb6864;
+}
+
+    
+.text-left{
+    margin: 10px auto 0;
+    font-size: 12px;
+}
+
+b{
+    color: black;
+    font-family: 'Josefin Sans', sans-serif, !important;
+}
+#small{
+    color: black;
+    font-size: 15px;
+}

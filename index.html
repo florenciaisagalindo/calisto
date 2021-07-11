@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Calisto | Organizador de tareas</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="icon" href="img/icon.png">
+    <!--Mi CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="journal/bootstrap.min.css">
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Cambay|Quicksand|Josefin+Sans|Inconsolata|Montserrat|Muli|Nunito|Open+Sans|Open+Sans+Condensed:300|Roboto+Mono|Work+Sans&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+    <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img src="img/unoseis.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarColor03">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">¿Cómo funciona?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">¿Por qué calisto?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      
+      
+    <div id="body">
+        <div id="ingresaTareas">
+          
+            <input type="form" id="nombreTarea" value="" placeholder="¿Qué tenes que hacer?" />
+            <button type="submit" id="botonTarea" class="btn btn-outline-secondary" onclick="agregarTarea()">✓</button>
+        </div>
+        <div class="container-fluid">
+        <div class="row">
+            
+            <div class="agregarTareas col-sm-12 col-md col-lg col-xl-" >
+                <h3>TAREAS</h3>
+                <ul id="ulTareas" style="list-style:none"></ul>
+                
+            </div>
+            <div class="tareasProgreso col-sm-12 col-md col-lg col-xl-" >
+                <h3>EN PROCESO</h3>
+                <ul id="ulProgreso" style="list-style:none"></ul>
+
+            </div>
+            <div class= "tareasCompletadas col-sm-12 col-md col-lg col-xl- ">
+                <h3>LISTO, CALISTO</h3>
+                <ul id="ulCompletadas"style="list-style:none"></ul>
+             
+            </div>
+        </div>
+    </div>
+    
+            
+            <!--Footer-->
+            <footer id="sticky-footer" class="py-4 text-white-50">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-3">
+                            <div class="li"><b>NOSOTRES</b></div>
+                            <a href="#">
+                                <div class="li">Acerca de</div>
+                            </a>
+                            <a href="#">
+                                <div class="li">Empleo</div>
+                            </a>
+                            <a href="#">
+                                <div class="li">Contacto</div>
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="li"><b>PRODUCTOS</b></div>
+                            <a href="#">
+                                <div class="li">Personal</div>
+                            </a>
+                            <a href="#">
+                                <div class="li">Contratar Calisto for Teams</div>
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="li"><b>ENLACES ÚTILES</b></div>
+                            <a href="#">
+                                <div class="li">Centro de ayuda</div>
+                            </a>
+                            <a href="#">
+                                <div class="li">Preferencias de cookies</div>
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="li"><b>BENEFICIOS</b></div>
+                            <a href="#">
+                                <div class="li">Tarjetas de regalo</div>
+                            </a>
+                            <a href="#">
+                                <div class="li">Promociones</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="redes">
+                        <a href="#"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="container">
+                    <a id="app" class="btn primary" href="https://play.google.com/store?hl=es_419https://play.google.com/store?hl=es_419" role="button">App móvil</a>
+                </div>
+                <div class="container">
+                    <div class="text-center">
+                        <small id="small"> Made with <a href="#">❤</a h> by Calisto</small id="small">
+                    </div>
+                </div>
+
+            </footer>
+
+            <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="form-group">
+                <textarea class="form-control" id="inputRecordatorio" rows="2"></textarea>
+        </div>         
+         <button type="submit" onclick="agregarRecordatorio()" id="btnRecordatorio" class="btn btn-warning ">Guardar </button>       
+         </div>
+        <div class= "lista-modal">
+            <ul id="ulRecordatorio">
+                
+            </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Listo</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+ 
+        <!---Este div cierra el div body->
+    
+
+    <!-- Optional JavaScript -->
+        <script src="app.js"></script>
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
